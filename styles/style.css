@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 120px;;
+    background-color: brown;
+    font-size: small;
+}
+
+h1 {
+    margin: 0;
+}
+
+button {
+    border-radius: 8px;
+}
+
+.navs-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;   /* centraliza verticalmente */
+    justify-content: space-around; /* distribui os h1 */
+    height: 100%; /* ocupa o header inteiro */
+}
+
+.slideshow {
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    background-color: cadetblue;
+}
+
+.perfil1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 230px;
+    width: 200px;
+    background-color: rgb(80, 80, 80);
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+.perfil2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 270px;
+    width: 260px;
+    background-color: rgb(80, 80, 80);
+    border: 3px solid black;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 20px;
+}
+
+.perfil3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 230px;
+    width: 200px;
+    background-color: rgb(80, 80, 80);
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+.slideshow .botoes{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 0 10px;
+}

@@ -6,8 +6,8 @@
 
 ## Links
 
-Pages: [GS Frontend Design](https://arthenry90.github.io/gs-frontend-design/)
-Repositorio: [GS Repositorio](https://github.com/Arthenry90/gs-frontend-design)
+- Pages: [GS Frontend Design](https://arthenry90.github.io/gs-frontend-design/)
+- Repositorio: [GS Repositorio](https://github.com/Arthenry90/gs-frontend-design)
 
 ## Integrantes
 

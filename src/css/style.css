@@ -26,6 +26,8 @@ button {
     height: 100%;
 }
 
+
+/* Estilos do slideshow */
 .slideshow-container {
     max-width: 900px;
     height: 400px;
@@ -118,3 +120,5 @@ button {
     gap: 10px;
     margin: 0 10px;
 }
+
+/* Estilos do quiz */

@@ -64,7 +64,8 @@ button {
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    bottom: 20px; 
+    top: auto; 
     transform: translateY(-50%);
     z-index: 2;
     width: auto;
@@ -115,4 +116,65 @@ button {
     flex-direction: row;
     gap: 10px;
     margin: 0 10px;
+}
+
+.quiz-section {
+    display: none; 
+    background-color: #e0f7fa;
+    border: 1px solid #26a69a; 
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(38, 166, 154, 0.2);
+}
+
+#toggle-quiz {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #26a69a; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#toggle-quiz:hover {
+    background-color: #00796b; 
+}
+
+.perfil1, .perfil2, .perfil3 {
+    background-color: #e3f2fd; 
+    border: 1px solid #64b5f6;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(100, 181, 246, 0.2);
+    color: #0d47a1; 
+}
+
+.perfil1 h2, .perfil2 h2, .perfil3 h2 {
+    color: #1565c0; 
+}
+
+.perfil1 p, .perfil2 p, .perfil3 p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.botoes button {
+    background-color: #64b5f6; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.botoes button:hover {
+    background-color: #1e88e5; /
 }

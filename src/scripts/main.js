@@ -2,6 +2,22 @@ let slideIndex = 1;
 
 document.addEventListener("DOMContentLoaded", () => {
     showSlides(slideIndex);
+
+    const quizSection = document.querySelector('.quiz-section');
+    const toggleButton = document.getElementById('toggle-quiz');
+
+    // Initially hide the quiz section
+    quizSection.style.display = 'none';
+
+    toggleButton.addEventListener('click', function() {
+        if (quizSection.style.display === 'none') {
+            quizSection.style.display = 'block';
+            toggleButton.textContent = 'Esconder Quiz';
+        } else {
+            quizSection.style.display = 'none';
+            toggleButton.textContent = 'Mostrar Quiz';
+        }
+    });
 });
 
 function plusSlides(n) {

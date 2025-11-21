@@ -16,6 +16,12 @@ h1 {
 
 button {
     border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #1e88e5; /* Darker blue */
+    transform: translateY(-3px); /* Lift effect */
 }
 
 .navs-header {
@@ -24,6 +30,15 @@ button {
     align-items: center;
     justify-content: space-around;
     height: 100%;
+}
+
+.navs-header a {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navs-header a:hover {
+    color: #64b5f6; /* Light blue */
+    transform: scale(1.1); /* Slight zoom effect */
 }
 
 .slideshow-container {
@@ -55,6 +70,16 @@ button {
     background-color: rgb(80, 80, 80);
     border: 3px solid black;
     border-radius: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .active {
@@ -119,13 +144,22 @@ button {
 }
 
 .quiz-section {
-    display: none; 
     background-color: #e0f7fa;
     border: 1px solid #26a69a; 
     padding: 20px;
     margin: 20px 0;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(38, 166, 154, 0.2);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    visibility: hidden; /* Use visibility instead of display */
+}
+
+.quiz-section.show {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible; /* Make visible when shown */
 }
 
 #toggle-quiz {

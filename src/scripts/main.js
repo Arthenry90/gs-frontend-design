@@ -6,16 +6,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const quizSection = document.querySelector('.quiz-section');
     const toggleButton = document.getElementById('toggle-quiz');
 
-    // Initially hide the quiz section
-    quizSection.style.display = 'none';
-
     toggleButton.addEventListener('click', function() {
-        if (quizSection.style.display === 'none') {
-            quizSection.style.display = 'block';
-            toggleButton.textContent = 'Esconder Quiz';
-        } else {
-            quizSection.style.display = 'none';
+        if (quizSection.classList.contains('show')) {
+            quizSection.classList.remove('show');
             toggleButton.textContent = 'Mostrar Quiz';
+        } else {
+            quizSection.classList.add('show');
+            toggleButton.textContent = 'Esconder Quiz';
         }
     });
 });

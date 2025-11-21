@@ -2,7 +2,7 @@
 
 ## Resumo do projeto
 
- O nosso projeto
+O projeto **Global Solution Frontend Design** é uma aplicação web interativa, ele foi desenvolvido para demonstrar conceitos de navegação, animações, transições e manipulação do DOM, proporcionando uma experiência de usuário fluida e envolvente.
 
 ## Links
 

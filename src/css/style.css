@@ -20,8 +20,8 @@ button {
 }
 
 button:hover {
-    background-color: #1e88e5; /* Darker blue */
-    transform: translateY(-3px); /* Lift effect */
+    background-color: #1e88e5; 
+    transform: translateY(-3px); 
 }
 
 .navs-header {
@@ -37,8 +37,18 @@ button:hover {
 }
 
 .navs-header a:hover {
-    color: #64b5f6; /* Light blue */
-    transform: scale(1.1); /* Slight zoom effect */
+    color: #64b5f6; 
+    transform: scale(1.1);
+}
+
+.navs-header h1 {
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navs-header h1:hover {
+    color: #64b5f6; 
+    transform: scale(1.1);
 }
 
 .slideshow-container {
@@ -153,13 +163,13 @@ button:hover {
     transition: opacity 0.5s ease, transform 0.5s ease;
     opacity: 0;
     transform: translateY(20px);
-    visibility: hidden; /* Use visibility instead of display */
+    visibility: hidden; 
 }
 
 .quiz-section.show {
     opacity: 1;
     transform: translateY(0);
-    visibility: visible; /* Make visible when shown */
+    visibility: visible;
 }
 
 #toggle-quiz {
@@ -210,5 +220,5 @@ button:hover {
 }
 
 .botoes button:hover {
-    background-color: #1e88e5; /
+    background-color: #1e88e5; 
 }
